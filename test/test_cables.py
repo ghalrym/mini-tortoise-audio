@@ -3,7 +3,7 @@ from unittest.mock import patch
 import pytest
 from pyaudio import PyAudio
 
-from vb_audio.audio_device import get_cable, VbCableIn, VbCableOut, NoCableFound
+from audio import VbCableIn, VbCableOut, NoCableFound, get_cable
 
 AUDIO_DEVICES = [
     {

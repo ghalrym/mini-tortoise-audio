@@ -2,7 +2,7 @@ from enum import StrEnum
 from typing import TypedDict, cast
 from pyaudio import PyAudio
 
-from vb_audio.exceptions import DeviceNotFound, NoCableFound
+from .exceptions import DeviceNotFound, NoCableFound
 
 
 class VbCableIn(StrEnum):

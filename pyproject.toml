@@ -1,0 +1,24 @@
+[project]
+name="mini-tortoise-audio"
+version="1.0"
+requires-python = ">=3.8"
+authors = [
+    {name="Andrew Reed", email="andrewreed2017@icloud.com"}
+]
+maintainers = [
+    {name="Andrew Reed", email="andrewreed2017@icloud.com"}
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+dependencies=[
+    "pyaudio",
+    "pydub",
+]
+
+[project.optional-dependencies]
+testing = ["pytest", "black"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
