@@ -5,20 +5,20 @@ from pyaudio import PyAudio
 from .exceptions import DeviceNotFound, NoCableFound
 
 
-class VbCableIn(StrEnum):
-    CABLE_INPUT = "CABLE Input (VB-Audio Virtual C"
-    CABLE_A_INPUT = "CABLE-A Input (VB-Audio Cable A"
-    CABLE_B_INPUT = "CABLE-B Input (VB-Audio Cable B"
-    CABLE_C_INPUT = "CABLE-C Input (VB-Audio Cable C"
-    CABLE_D_INPUT = "CABLE-D Input (VB-Audio Cable D"
-
-
 class VbCableOut(StrEnum):
-    CABLE_OUTPUT = "CABLE Output (VB-Audio Virtual "
-    CABLE_A_OUTPUT = "CABLE-A Output (VB-Audio Cable "
-    CABLE_B_OUTPUT = "CABLE-B Output (VB-Audio Cable "
-    CABLE_C_OUTPUT = "CABLE-C Output (VB-Audio Cable "
-    CABLE_D_OUTPUT = "CABLE-C Output (VB-Audio Cable "
+    CABLE_OUTPUT = "CABLE Input (VB-Audio Virtual C"
+    CABLE_A_OUTPUT = "CABLE-A Input (VB-Audio Cable A"
+    CABLE_B_OUTPUT = "CABLE-B Input (VB-Audio Cable B"
+    CABLE_C_OUTPUT = "CABLE-C Input (VB-Audio Cable C"
+    CABLE_D_OUTPUT = "CABLE-D Input (VB-Audio Cable D"
+
+
+class VbCableIn(StrEnum):
+    CABLE_Input = "CABLE Output (VB-Audio Virtual "
+    CABLE_A_Input = "CABLE-A Output (VB-Audio Cable "
+    CABLE_B_Input = "CABLE-B Output (VB-Audio Cable "
+    CABLE_C_Input = "CABLE-C Output (VB-Audio Cable "
+    CABLE_D_Input = "CABLE-C Output (VB-Audio Cable "
 
 
 class AudioDevice(TypedDict):
