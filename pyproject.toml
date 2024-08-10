@@ -11,7 +11,6 @@ maintainers = [
 readme = {file = "README.md", content-type = "text/markdown"}
 dependencies=[
     "pyaudio",
-    "pydub",
 ]
 
 [project.optional-dependencies]
