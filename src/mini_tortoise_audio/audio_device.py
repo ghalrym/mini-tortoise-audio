@@ -1,11 +1,11 @@
-from enum import StrEnum
+from enum import Enum
 from typing import TypedDict, cast
 from pyaudio import PyAudio
 
 from .exceptions import DeviceNotFound, NoCableFound
 
 
-class VbCableOut(StrEnum):
+class VbCableOut(Enum):
     CABLE_OUTPUT = "CABLE Input (VB-Audio Virtual C"
     CABLE_A_OUTPUT = "CABLE-A Input (VB-Audio Cable A"
     CABLE_B_OUTPUT = "CABLE-B Input (VB-Audio Cable B"
@@ -13,7 +13,7 @@ class VbCableOut(StrEnum):
     CABLE_D_OUTPUT = "CABLE-D Input (VB-Audio Cable D"
 
 
-class VbCableIn(StrEnum):
+class VbCableIn(Enum):
     CABLE_Input = "CABLE Output (VB-Audio Virtual "
     CABLE_A_Input = "CABLE-A Output (VB-Audio Cable "
     CABLE_B_Input = "CABLE-B Output (VB-Audio Cable "
